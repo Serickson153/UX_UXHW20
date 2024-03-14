@@ -2,8 +2,6 @@ window.addEventListener('scroll', function() {
     var headerNav = document.getElementById('headerNav');
     var subNavbar = document.getElementById('subNavbar');
     var scrollPosition = window.scrollY;
-
-    // Get the height of the headerNav
     var headerNavHeight = headerNav.offsetHeight;
 
     if (scrollPosition >= headerNavHeight) {
@@ -22,7 +20,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Highlighting active section in the subnavbar
+
 window.addEventListener('scroll', function () {
     const subNavItems = document.querySelectorAll('.subNavbartext li a');
     
